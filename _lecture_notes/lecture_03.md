@@ -223,7 +223,7 @@ $\bb{\theta}$, it produces a vector
 $\bb{g} = \nabla L(\bb{\theta})$ satisfying
 
 $$
-dL = \langle \bb{g}, \bb{dx} \rangle = \bb{g}^\Tr \bb{d\theta};
+dL = \langle \bb{g}, \bb{d\theta} \rangle = \bb{g}^\Tr \bb{d\theta};
 $$
 
 in other words, an inner product of the argument change
@@ -292,7 +292,7 @@ $\bb{d}$. Different choices of the norm lead to different answers (so
 there are many steepest directions); in the $\ell_2$ sense we obtain
 
 $$
-\bb{d} = -\nabla \bb{d}.
+\bb{d} = -\nabla L.
 $$
 
 This choice of the descent direction leads to a family of algorithms known as
@@ -557,7 +557,7 @@ $\bb{y} = \{ y\_i \},~{i \in \mathbb{Z}}$.
 Let us consider the output of the $i$-th neuron,
 
 $$
-y_i = \varphi\left( \sum_{j \in \mathbb{Z}} w_{ij} x_j + b+i \right).
+y_i = \varphi\left( \sum_{j \in \mathbb{Z}} w_{ij} x_j + b_i \right).
 $$
 
 
